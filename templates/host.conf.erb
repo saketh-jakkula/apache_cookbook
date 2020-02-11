@@ -1,0 +1,5 @@
+<VirtualHost *:80>
+    ServerName <%= @host_name %>
+    DocumentRoot /var/www/html/
+    Redirect permanent /<%= @source %> http://<%= @host_name %>/index.html
+</VirtualHost>
