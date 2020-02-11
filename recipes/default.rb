@@ -6,11 +6,6 @@
 
 package 'httpd'
 
-#cookbook_file '/etc/httpd/conf.d/host.conf' do
-#  source 'test.conf'
-#  action :create
-#end
-
 
 template '/etc/httpd/conf.d/host.conf' do
   source 'host.conf.erb'
