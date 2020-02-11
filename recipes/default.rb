@@ -29,7 +29,7 @@ end
 
 
 service 'httpd' do
-  action [ :restart ]
+  action [ :enable, :start ]
 end
 
 
